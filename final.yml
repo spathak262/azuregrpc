@@ -38,3 +38,4 @@ static_resources:
       http2_protocol_options: {}
       lb_policy: round_robin
       hosts: [{ socket_address: { address: google.com, port_value: 443 }}]
+      tls_context: { sni: www.google.com }
