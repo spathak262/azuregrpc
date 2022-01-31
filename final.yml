@@ -21,8 +21,8 @@ static_resources:
                     cluster: sensor_service
                     max_grpc_timeout: 0s
                 cors:
-                  allow_origin:
-                  - "*"
+                  allowOriginRegex:
+                    - '^http(s)?:\/\/localhost:[0-9]{4,5}$'
                   allow_methods: GET, PUT, DELETE, POST, OPTIONS
                   allow_headers: keep-alive,user-agent,cache-control,content-type,content-transfer-encoding,custom-header-1,x-accept-content-transfer-encoding,x-accept-response-streaming,x-user-agent,x-grpc-web,grpc-timeout
                   max_age: "1728000"
