@@ -43,7 +43,7 @@ static_resources:
       http2_protocol_options: {}
       lb_policy: round_robin
       load_assignment:
-      cluster_name: service1
+      cluster_name: sensor_service
       endpoints:
       - lb_endpoints:
         - endpoint:
