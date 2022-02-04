@@ -39,7 +39,8 @@ static_resources:
     clusters:
     - name: sensor_service
       connect_timeout: 0.25s
-      type: logical_dns
+      type: LOGICAL_DNS
       http2_protocol_options: {}
       lb_policy: round_robin
-      hosts: [{ socket_address: { address: localhost, port_value: 8080 }}]
+      hosts: [{ socket_address: { address: google.com, port_value: 443 }}]
+      tls_context: { sni: google.com }
