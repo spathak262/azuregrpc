@@ -5,7 +5,7 @@ import "./App.css";
 const { PingPongServiceClient } = require("./ping_pong_grpc_web_pb");
 const { PingRequest, PongResponse } = require("./ping_pong_pb.js");
 
-var client = new PingPongServiceClient("http://20.120.87.99:10000", null, null);
+var client = new PingPongServiceClient("http://localhost:10000", null, null);
 
 class App extends Component {
   callGrpcService = () => {
